@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{57CB8575-085F-51D0-82B9-C7CD1519124E}</ProjectGuid>
+    <ProjectGuid>{2635DA63-3BEB-3B34-741A-061AD89DAC2D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -57,6 +57,7 @@
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
      <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
@@ -292,35 +293,53 @@
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
+ <Reference Include="Facebook.Unity.Gameroom">
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/FacebookSDK/Plugins/Gameroom/Facebook.Unity.Gameroom.dll</HintPath>
+ </Reference>
  <Reference Include="DOTween">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.App">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
- </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Database">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Tasks">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.TaskExtension">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="FacebookNamedPipeClient">
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/FacebookSDK/Plugins/Gameroom/FacebookNamedPipeClient.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Tasks">
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
  </Reference>
  <Reference Include="Google.MiniJson">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Platform">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Compat">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity">
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Auth">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -671,94 +690,94 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Recorder.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Recorder.Base">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Autodesk.Fbx.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Autodesk.Fbx.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Autodesk.Fbx.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Formats.Fbx.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.Formats.Fbx.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.Formats.Fbx.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Searcher.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Autodesk.Fbx">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Autodesk.Fbx.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Autodesk.Fbx.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Formats.Fbx.Runtime">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.Formats.Fbx.Runtime.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.Formats.Fbx.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Recorder">
- <HintPath>C:/Users/ASUS/Unity Projects/CoinRushPrototype - firebase/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+ <HintPath>D:/Unity Repository/CoinRush-Firebase-Attack/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

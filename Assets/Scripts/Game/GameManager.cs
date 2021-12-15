@@ -19,11 +19,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    public int _playerCurrentLevel;
     public int _coins;
-    public int _energy = 25;
+    public int _energy ;
     public int _shield;
     public float _minutes;
-
+    
     public List<GameObject> _BuildingDetails;
     public List<BuildingTypes> _BuildingTypes;
     public List<Vector3> _PositionDetails;
